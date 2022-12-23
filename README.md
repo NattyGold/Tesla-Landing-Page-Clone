@@ -5,17 +5,16 @@
 ![home](https://github.com/NattyGold/Tesla-Landing-Page-Clone/blob/main/project-img.png)
 
 ## Built With
-## HTML, CSS, and Vanilla Javascript
+# HTML, CSS, and Vanilla Javascript
 
 ## Hosted On
-## Netlify
+# Netlify
 
 ## Website Link
 
 
 ## Author
-## Nathaniel Nathaniel
+# Nathaniel Nathaniel
 
 ## Acknowledgement
-## Netlify, Github
-This is Tesla Landing Page clone made with HTML, CSS &amp; BOOTSTRAP.
+# Netlify, Github
