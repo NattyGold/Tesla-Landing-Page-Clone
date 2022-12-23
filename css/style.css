@@ -15,7 +15,7 @@ a{
 }
 body{
     font-family: 'Segoe UI';
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .topNav{
     position: relative;
