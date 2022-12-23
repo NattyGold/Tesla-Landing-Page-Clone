@@ -128,7 +128,7 @@ body{
 }
 .banner .btns{
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
