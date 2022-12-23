@@ -177,6 +177,13 @@ body{
 }
 
 @media screen and (max-width: 1200px) {
+    .logo{
+       height: 35px;
+       max-width: 85px;
+       display: flex;
+       align-items: center;
+        justify-content: center;
+    }
     .navs{
             display: none;
     }
