@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -47,45 +46,6 @@ a{
 .logo img{
     max-width: 100%;
 }
-
-.banner{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    z-index: -999;
-}
-.model{
-    position: relative;
-    width: 100vw;
-    min-height: 100%;
-    background-size: cover;
-    background-position: center center;
-    
-}
-.modelY{
-    background-image: url("/images/tesla_modelY.jpg");
-}
-
-.model3{
-    background-image: url("/images/tesla_model3.jpg");
-}
-.modelS{
-    background-image: url("/images/tesla_modelS.jpg");
-}
-.modelX{
-    background-image: url("/images/tesla_modelX.jpg");
-}
-.solarPanel{
-    background-image: url("/images/tesla_solarPanel.jpg");
-}
-.solarRoof{
-    background-image: url("/images/tesla_solarRoof.jpg");
-}
-
 .navs{
     display: flex;
     align-content: center;
@@ -143,6 +103,44 @@ a{
     border-radius: 4px;
     transition: 0.1s ease-out;
 }
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: -999;
+}
+.model{
+    position: relative;
+    width: 100vw;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.modelY{
+    background-image: url("/images/tesla_modelY.jpg");
+}
+
+.model3{
+    background-image: url("/images/tesla_model3.jpg");
+}
+.modelS{
+    background-image: url("/images/tesla_modelS.jpg");
+}
+.modelX{
+    background-image: url("/images/tesla_modelX.jpg");
+}
+.solarPanel{
+    background-image: url("/images/tesla_solarPanel.jpg");
+}
+.solarRoof{
+    background-image: url("/images/tesla_solarRoof.jpg");
+}
+
 .model_type{
     position: absolute;
     top: 24%;
