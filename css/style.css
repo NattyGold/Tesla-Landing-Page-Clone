@@ -228,7 +228,7 @@ a{
         position: fixed;
         top: 0;
         right: 0;
-        width: 300px;
+        width: 250px;
         height: 100vh;
         background-color: #fff;
         display: flex;
@@ -253,19 +253,21 @@ a{
     .navs.active .nav{
         flex-direction: column;
         justify-content: flex-start;
-    
     }
     .navs.active .otherNav {
         display: block;
+    }
+    .navs.active .nav li{
+        margin-bottom: 5px;
     }
     .navs.active .topNavRight li:last-child{
         display: none;
     }
     .navs.active > ul.nav li a{
         width: 255px;
-        font-size: 14px;
+        font-size: 12px;
         text-align: left;
-        padding: 8px;
+        padding: 5px;
         font-weight: 500 !important;
         display: block;
         white-space: nowrap;
