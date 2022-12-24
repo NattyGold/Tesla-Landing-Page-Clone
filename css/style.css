@@ -4,26 +4,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI';
+    overflow-x: hidden;
+}
 ul{
     list-style: none;
 }
 a{
     text-decoration: none;
 }
-.d-none-lg.menu, .d-none-lg.close{
+.text-decoration-none{
+    text-decoration: none !important;
+}
+.d-none-lg.menu, .d-none-lg.close, .d-none-lg.otherNav{
     display: none;
 }
-body{
-    font-family: 'Segoe UI';
-    overflow: hidden;
-}
 .topNav{
-    position: relative;
-    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-content: center;
     justify-content: space-between;
     padding: 15px 30px;
+    z-index: 99999;
+    overflow: hidden;
 
 }
 .logo{
@@ -44,12 +54,38 @@ body{
     left: 0;
     width: 100%;
     height: 100vh;
-    background-image: url(/images/homepage_2.jpg);
-    background-size: cover;
-    background-position: center  center;
-    background-attachment: scroll;
-    z-index: -9999;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: -999;
 }
+.model{
+    position: relative;
+    width: 100vw;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.modelY{
+    background-image: url("/images/tesla_modelY.jpg");
+}
+
+.model3{
+    background-image: url("/images/tesla_model3.jpg");
+}
+.modelS{
+    background-image: url("/images/tesla_modelS.jpg");
+}
+.modelX{
+    background-image: url("/images/tesla_modelX.jpg");
+}
+.solarPanel{
+    background-image: url("/images/tesla_solarPanel.jpg");
+}
+.solarRoof{
+    background-image: url("/images/tesla_solarRoof.jpg");
+}
+
 .navs{
     display: flex;
     align-content: center;
@@ -82,7 +118,7 @@ body{
 
 }
 .nav li:hover a{
-    background-color: #d5d5d5;
+    background-color: #e9e9e9;
 }
 .nav ul.navlinks{
     list-style: none;
@@ -107,28 +143,28 @@ body{
     border-radius: 4px;
     transition: 0.1s ease-out;
 }
-.banner .model_type{
+.model_type{
     position: absolute;
     top: 24%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.banner .model_type h1{
+.model_type h1{
     font-size: 40px;
     color: #333;
     font-weight: 600;
 }
-.banner .model_type a{
+.model_type a{
     text-decoration: underline;
     color: #333;
     line-height: 1.1;
     display: block;
     white-space: nowrap;
 }
-.banner .btns{
-    position: absolute;
-    bottom: 30%;
+.btns{
+    position: fixed;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -136,7 +172,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.banner .btns .btn{
+.btns .btn{
     position: relative;
     display: inline-block;
     margin: 0px 10px;
@@ -148,7 +184,7 @@ body{
     color: #e3dcdc;
     border-radius: 4px;
 }
-.banner .btns .btn.customer_order{
+.btns .btn.customer_order{
     background-color: #fdfdfd;
     color: #000d09;
 }
@@ -191,7 +227,7 @@ body{
         display: block !important;
     }
     .navs.active{
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         width: 300px;
@@ -202,7 +238,8 @@ body{
         justify-content: flex-start;
         align-items: flex-start;
         overflow: hidden;
-        padding: 90px 20px 10px 20px ;
+        overflow-y: scroll;
+        padding: 50px 15px;
         z-index: 9999;
         transition: 0.1s;
         animation: slideIn 0.7s linear forwards;
@@ -220,24 +257,27 @@ body{
         justify-content: flex-start;
     
     }
+    .navs.active .otherNav {
+        display: block;
+    }
     .navs.active .topNavRight li:last-child{
         display: none;
     }
     .navs.active > ul.nav li a{
         width: 255px;
-        font-size: 18px;
+        font-size: 14px;
         text-align: left;
         padding: 8px;
         display: block;
         white-space: nowrap;
     }
     .navs.active .close{
-        position: absolute;
+        position: fixed;
         cursor: pointer;
         top: 30px;
         right: 40px;
         display: block;
-        font-size: 26px;
+        font-size: 20px;
         color: #000d09;
         font-weight: 600;
     }
@@ -251,6 +291,4 @@ body{
         width: 100%;
         margin: 10px 0px;
     }
-
-    
 }
