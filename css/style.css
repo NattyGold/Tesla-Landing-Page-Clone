@@ -266,6 +266,7 @@ a{
         font-size: 14px;
         text-align: left;
         padding: 8px;
+        font-weight: 500 !important;
         display: block;
         white-space: nowrap;
     }
